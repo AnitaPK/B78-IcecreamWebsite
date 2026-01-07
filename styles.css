@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.nav-menu .active {
+  background: #fff;
+  color: #ff5e62;
+  font-weight: bold;
+}
+
+/* PAGE CONTENT */
+.content {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #ccc;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #ff9a9e;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    margin-top: 10px;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
